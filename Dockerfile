@@ -4,7 +4,7 @@ COPY index.js package.json package-lock.json ./
 
 RUN npm install
 
-COPY node_modules ./
+COPY node_modules/ ./
 
 RUN ls
 
