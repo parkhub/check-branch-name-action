@@ -1,11 +1,9 @@
 FROM mhart/alpine-node
 
-WORKDIR /github/workspace/
-
-COPY package.json package-lock.json ./
+COPY index.js package.json package-lock.json ./
 
 RUN npm install
 
-COPY . .
+COPY node_modules ./
 
-CMD ["node", "index.js"]
+CMD ["node", "/index.js"]
