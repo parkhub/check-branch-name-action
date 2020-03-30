@@ -1,4 +1,4 @@
-const possibleMatch = process.ENV.BRANCH.split("_")[0].match(/((?!([A-Z0-9a-z]{1,10})-?$)[A-Z]{1}[A-Z0-9]+-\d+)/g);
+const possibleMatch = process.env.BRANCH.split("_")[0].match(/((?!([A-Z0-9a-z]{1,10})-?$)[A-Z]{1}[A-Z0-9]+-\d+)/g);
 
 if (!possibleMatch) {
     process.exit(1)
