@@ -1,0 +1,6 @@
+name: 'Check Branch Name Formatting'
+description: Checks the branch name formatted to make sure it contains the Jira issue key.
+author: Logan Fisher
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
