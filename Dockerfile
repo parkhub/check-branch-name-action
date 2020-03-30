@@ -1,8 +1,4 @@
-FROM mhart/alpine-node as builder
-
-RUN mkdir /usr/src/app
-
-WORKDIR /usr/src/app
+FROM mhart/alpine-node
 
 COPY package.json package-lock.json ./
 
